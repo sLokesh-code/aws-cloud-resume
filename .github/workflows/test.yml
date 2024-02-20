@@ -1,0 +1,15 @@
+name: testing folder
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  checking:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: hello RAGA
+      run: echo "Hello RAGA"
+      shell: bash
